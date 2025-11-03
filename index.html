@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizador de Viajes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Organizador de Viajes</h1>
+    <p>Organiza y consulta el clima de tu próximo destino</p>
+  </header>
+
+  <main>
+    
+    <section id="registro">
+      <h2>Registrar nuevo viaje</h2>
+      <form id="viajeForm">
+        <div class="campo">
+          <label>Nombre del viaje:</label>
+          <input type="text" id="nombre" required>
+          <small class="error" id="errorNombre"></small>
+        </div>
+
+        <div class="campo">
+          <label>Ciudad destino:</label>
+          <input type="text" id="destino" required>
+          <small class="error" id="errorDestino"></small>
+        </div>
+
+        <div class="campo">
+          <label>Fecha de salida:</label>
+          <input type="date" id="salida" required>
+          <small class="error" id="errorSalida"></small>
+        </div>
+
+        <div class="campo">
+          <label>Fecha de regreso:</label>
+          <input type="date" id="regreso" required>
+          <small class="error" id="errorRegreso"></small>
+        </div>
+
+        <div class="campo">
+          <label>Email de contacto:</label>
+          <input type="email" id="email" required>
+          <small class="error" id="errorEmail"></small>
+        </div>
+
+        <button type="submit">Guardar viaje</button>
+      </form>
+    </section>
+
+    <!-- SECCIÓN DE TAREAS -->
+    <section id="tareas" class="oculto">
+      <h2>Tareas del viaje</h2>
+      <div id="infoViaje"></div>
+
+      <div class="agregar-tarea">
+        <input type="text" id="nuevaTarea" placeholder="Ej: Reservar hotel...">
+        <button id="agregarTarea">Agregar</button>
+      </div>
+
+      <ul id="listaTareas"></ul>
+    </section>
+
+
+    <section id="clima" class="oculto">
+      <h2>Clima en el destino</h2>
+      <div id="infoClima">Introduce una ciudad válida para ver el clima.</div>
+    </section>
+  </main>
+
+  
+
+  <script src="app.js"></script>
+</body>
+</html>

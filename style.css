@@ -1,0 +1,124 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0078d7;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+main {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* ===== SECCIONES ===== */
+section {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ===== FORMULARIO ===== */
+.campo {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 4px;
+}
+
+input:valid {
+  border-color: green;
+}
+input:invalid {
+  border-color: red;
+}
+
+button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+.oculto {
+  display: none;
+}
+
+/* ===== LISTA DE TAREAS ===== */
+#listaTareas {
+  list-style: none;
+  padding: 0;
+}
+
+#listaTareas li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+#listaTareas li.completada {
+  text-decoration: line-through;
+  color: gray;
+  background: #e0e0e0;
+}
+
+.agregar-tarea {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* ===== CLIMA ===== */
+#infoClima {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #0078d7;
+  color: white;
+  margin-top: 30px;
+}
